@@ -15,7 +15,7 @@ const OrderItem=({id,title, price, rating, desc, date,quantity, status})=>{
     return <div className=" flex items-center">
     <div className="w-full flex p-2 gap-2 items-center flex-wrap justify-between">
         <div className="flex gap-3 items-center">
-            <img className="w-36 rounded-md bg-gray-100 " src={`../../Ekart/Images/${title}.png`} />
+            <img className="w-36 rounded-md bg-gray-100 " src={`../../MyCart/Images/${title}.png`} />
             <div className="flex flex-col gap-2 ">
                 <span className="font-semibold text-xl ">{title}</span>
                 <span className="xsm-mx:text-[8px]/[10px] text-xs text-gray-500 font-semibold">{desc}</span>

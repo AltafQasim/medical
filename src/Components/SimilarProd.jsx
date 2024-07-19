@@ -5,7 +5,7 @@ const SimilarProd=({id, title, price, rating})=>{
     
     return <Link to={`/product/${id}`}><div className="bg-gray-100 cursor-pointer hover:bg-gray-200 flex items-center p-1 py-2 sm-mx:min-h-28  rounded-xl">
     <div className="flex gap-1 sm-mx:justify-between items-center">
-        <img className="w-20 sm-mx:w-[60px] rounded-md bg-white" src={`../../Ekart/Images/${title}.png`} />
+        <img className="w-20 sm-mx:w-[60px] rounded-md bg-white" src={`../../MyCart/Images/${title}.png`} />
         <div className="flex w-36 sm-mx:w-[90px] flex-col gap-1">
             <span className="font-semibold ">{title}</span>
             <div className="flex" >{
