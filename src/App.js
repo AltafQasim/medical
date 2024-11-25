@@ -10,16 +10,16 @@ import Search from "./Components/Search";
 import { BrowserRouter } from "react-router-dom";
 import Home from "./Components/Home";
 import ScrollToTop from "./Components/ScrollToTop";
-import { Provider } from 'react-redux';
-import store from './store';
+import { Provider } from "react-redux";
+import store from "./store";
 import NotFound from "./Components/NotFound";
 
 export default function App() {
   return (
     <Provider store={store}>
-      <BrowserRouter basename="/MyCart" >
+      <BrowserRouter basename="/MyCart">
         <Header />
-        <div className="mt-16 min-h-[65vh]">
+        <div className="mt-16 min-h-[65vh] xl:container mx-auto">
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="/cart" element={<Cart />} />
