@@ -31,9 +31,9 @@ const NextArrow = (props) => {
   );
 };
 
-const Carousel = () => {
+const Carousel = ({ images }) => {
   const sliderRef = useRef(null);
-  const offers = [1, 2, 3];
+  const offers = [1, 2, 3, 4, 5];
   useEffect(() => {
     const interval = setInterval(() => {
       sliderRef.current.slickNext();
@@ -54,17 +54,17 @@ const Carousel = () => {
   return (
     <div className="w-full max-h-fit">
       <Slider {...settings} ref={sliderRef}>
-        {offers.map((x, index) => (
-          <div key={index} className=" cursor-pointer  overflow-hidden">
+        {images.map((x, index) => (
+          <div key={index} className="cursor-pointer  overflow-hidden">
             <img
-              src={`../../MyCart/Images/img${x}.webp`}
+              src={x}
               alt="Slide"
-              className="w-auto sm-mx:!hidden object-cover min-h-[30vh] "
+              className="w-full h-full sm-mx:!hidden object-cover min-h-[30vh] "
             />
             <img
-              src={`../../MyCart/Images/img${x}.webp`}
+              src={x}
               alt="Slide"
-              className="w-auto sm:!hidden object-cover min-h-[30vh] "
+              className="w-full h-full sm:!hidden object-contain min-h-[30vh] "
             />
           </div>
         ))}

@@ -10,20 +10,31 @@ import HelpSection from "./HelpSection";
 import StoreList from "./StoreList";
 import TodayDeals from "./TodayDeals";
 
-const Home=()=>{
-    useEffect(() => {
-        window.scrollTo(0, 0);
-      }, []);
-    return <><Carousel/>
-    <Category/>
-    <Deals/>
-    <BrandList/>
-    <DiscountList/>
-    <TodayDeals/>
-    <DebitCard/>
-    <StoreList/>
-    <HelpSection/>
-    <hr className="mx-8 my-5 xs-mx:mx-3 border-gray-400"/> 
-    <FooterLinks/></>
-}
+const Home = () => {
+  const banners = [
+    `../../MyCart/Images/banners/banner1.jpg`,
+    `../../MyCart/Images/banners/banner2.jpg`,
+    `../../MyCart/Images/banners/banner3.jpg`,
+    `../../MyCart/Images/banners/banner4.jpg`,
+    `../../MyCart/Images/banners/banner5.jpg`,
+  ];
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  return (
+    <>
+      <Carousel images={banners} />
+      <Category />
+      <Deals />
+      <BrandList />
+      <DiscountList />
+      <TodayDeals />
+      <DebitCard />
+      <StoreList />
+      <HelpSection />
+      <hr className="mx-8 my-5 xs-mx:mx-3 border-gray-400" />
+      <FooterLinks />
+    </>
+  );
+};
 export default Home;
