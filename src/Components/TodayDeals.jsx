@@ -1,16 +1,15 @@
 import { useEffect, useState } from "react";
 import Item from "./Item";
-import { getCategoryWiseItems } from "../Services/ItemService";
+import { getCategories, getCategoryWiseItems } from "../Services/ItemService";
 
 const TodayDeals = () => {
   const [items, setItems] = useState([]);
   const [btn, setBtn] = useState(0);
-  const category = ["Pain Relief"];
+  const category = getCategories();
   useEffect(() => {
     getCategoryWiseItems(category[btn])
       .then((res) => {
         setItems(res);
-        console.log(res);
       })
       .catch((error) => console.log(error));
   }, [btn]);

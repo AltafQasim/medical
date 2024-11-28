@@ -6,17 +6,20 @@ import {
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addItem } from "../Slices/CartSlice";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { toggleItemInWishlist } from "../Slices/WishlistSlice";
+import Slider from "react-slick";
 const Item = ({ id, title, price, desc, rating, images }) => {
   const dispatch = useDispatch();
   const [added, setAdded] = useState(false);
   const [goToCart, setGoToCart] = useState(false);
   const wishlist = useSelector((state) => state.wishlist);
   const [heart, setHeart] = useState(false);
+
   useEffect(() => {
     if (wishlist && wishlist.find((item) => item === id)) setHeart(true);
   }, []);
+
   const handleAdd = () => {
     setAdded(true);
     setTimeout(() => {
@@ -28,15 +31,42 @@ const Item = ({ id, title, price, desc, rating, images }) => {
     dispatch(toggleItemInWishlist({ id }));
     setHeart(!heart);
   };
+
+  var settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    pauseOnHover: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+  };
+
   return (
     <div className=" flex flex-col xsm-mx:w-[20%] xsm-mx:min-w-32 xs-mx:w-[20%] sm-mx:w-[25%] sm-mx:min-w-40 md-mx:w-[30%] md-mx:min-w-52 md:min-w-72 md:w-[23%] gap-1.5">
       <div className="bg-gray-100 rounded-lg flex items-center justify-center relative overflow-hidden">
         <Link to={`/product/${id}`}>
-          <img
-            className="cursor-pointer hover:scale-[1.2] transform transition-transform duration-[400ms]"
-            src={`../../MyCart/Images/products/${title + images[0]}`}
-            alt=""
-          />
+          {images.length > 1 ? (
+            <Slider
+              {...settings}
+              className="w-[128px] !max-h-[128px] xsm:w-[160px] xsm:!min-h-[160px] sm:w-[208px] sm:!min-h-[208px] md:w-[288px] md:!min-h-[288px] 2xl:w-[345px] 2xl:!min-h-[345px]"
+            >
+              {images.map((x, index) => (
+                <img
+                  src={`../../MyCart/Images/products/${title + x}`}
+                  alt="Slide"
+                  className="mix-blend-multiply object-cover cursor-pointer hover:scale-[1.2] transform transition-transform duration-[400ms]"
+                />
+              ))}
+            </Slider>
+          ) : (
+            <img
+              className="cursor-pointer hover:scale-[1.2] mix-blend-multiply transform transition-transform duration-[400ms]"
+              src={`../../MyCart/Images/products/${title + images[0]}`}
+              alt=""
+            />
+          )}
         </Link>
         <div
           onClick={() => handleLike()}
