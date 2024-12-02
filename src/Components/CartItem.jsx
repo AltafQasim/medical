@@ -39,7 +39,7 @@ const CartItem = ({
         <div className="flex gap-2 items-center">
           <img
             className="w-36 rounded-md bg-gray-100"
-            src={`../../Medical/Images/products/${title + images[0]}`}
+            src={`../../medical/Images/products/${title + images[0]}`}
           />
           <div className="flex flex-col gap-2 ">
             <span className="font-semibold text-xl xs-mx:text-base">

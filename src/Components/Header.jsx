@@ -50,7 +50,7 @@ export default function Header() {
                 <div className="flex md:flex-1">
                     <Link to="/" className="-m-1.5 p-1.5 flex gap-x-2 items-center">
                         <GravityUiShoppingCart className="h-6 w-6 text-sky-600" />
-                        <span className="font-bold text-xl">Medical</span>
+                        <span className="font-bold text-xl">medical</span>
                     </Link>
                 </div>
                 <div className="flex md:hidden md-mx:order-1">

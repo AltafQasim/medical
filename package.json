@@ -1,6 +1,6 @@
 {
-  "name": "Medical",
-  "homepage": "https://AltafQasim.github.io/Medical",
+  "name": "medical",
+  "homepage": "https://AltafQasim.github.io/medical",
   "version": "0.1.0",
   "private": false,
   "dependencies": {

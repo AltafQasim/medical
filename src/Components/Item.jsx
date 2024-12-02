@@ -54,7 +54,7 @@ const Item = ({ id, title, price, desc, rating, images }) => {
             >
               {images.map((x, index) => (
                 <img
-                  src={`../../Medical/Images/products/${title + x}`}
+                  src={`../../medical/Images/products/${title + x}`}
                   alt="Slide"
                   className="mix-blend-multiply object-cover cursor-pointer hover:scale-[1.2] transform transition-transform duration-[400ms]"
                 />
@@ -63,7 +63,7 @@ const Item = ({ id, title, price, desc, rating, images }) => {
           ) : (
             <img
               className="cursor-pointer hover:scale-[1.2] mix-blend-multiply transform transition-transform duration-[400ms]"
-              src={`../../Medical/Images/products/${title + images[0]}`}
+              src={`../../medical/Images/products/${title + images[0]}`}
               alt=""
             />
           )}
