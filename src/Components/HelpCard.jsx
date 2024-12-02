@@ -7,7 +7,7 @@ const HelpCard = ({title}) => {
             <a className="xsm-mx:text-xs xs-mx:text-sm hover:underline font-semibold flex items-center xsm:gap-1 cursor-pointer text-blue-700">Click here <ArrowTopRightOnSquareIcon className="xs-mx:hidden w-4 h-4"/> </a>
         </div>
         <div className="overflow-hidden">
-        <img className="hover:scale-[1.2]  transform transition-transform duration-[400ms]" src={`../../MyCart/Images/${title}.png`} />
+        <img className="hover:scale-[1.2]  transform transition-transform duration-[400ms]" src={`../../Medical/Images/${title}.png`} />
         </div>
     </div>
 }

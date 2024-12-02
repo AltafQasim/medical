@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="flex items-center gap-1 hover:text-red-600 cursor-pointer transform transition-transform mb-1 duration-[400ms]"><QuestionMarkCircleIcon className="w-5 h-5 text-red-700" />Help Center</div>
         <div className=" hover:text-red-600 cursor-pointer transform transition-transform mb-1 duration-[400ms]">Terms of Service</div>
         <div className=" hover:text-red-600 cursor-pointer transform transition-transform mb-1 duration-[400ms]">Privacy & Policy</div>
-        <div className="">All Right reserved by MyCart & <a href="https://github.com/AltafQasim" target="_blank" className=" text-red-500 hover:text-red-800 cursor-pointer transform transition-transform mb-1 duration-[400ms] underline">AltafQasim</a> | {new Date().getFullYear()}</div>
+        <div className="">All Right reserved by Medical & <a href="https://github.com/AltafQasim" target="_blank" className=" text-red-500 hover:text-red-800 cursor-pointer transform transition-transform mb-1 duration-[400ms] underline">AltafQasim</a> | {new Date().getFullYear()}</div>
     </div>
 }
 export default Footer;

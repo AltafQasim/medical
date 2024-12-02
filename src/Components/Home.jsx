@@ -12,11 +12,11 @@ import TodayDeals from "./TodayDeals";
 
 const Home = () => {
   const banners = [
-    `../../MyCart/Images/banners/banner1.jpg`,
-    `../../MyCart/Images/banners/banner2.jpg`,
-    `../../MyCart/Images/banners/banner3.jpg`,
-    `../../MyCart/Images/banners/banner4.jpg`,
-    `../../MyCart/Images/banners/banner5.jpg`,
+    `../../Medical/Images/banners/banner1.jpg`,
+    `../../Medical/Images/banners/banner2.jpg`,
+    `../../Medical/Images/banners/banner3.jpg`,
+    `../../Medical/Images/banners/banner4.jpg`,
+    `../../Medical/Images/banners/banner5.jpg`,
   ];
   useEffect(() => {
     window.scrollTo(0, 0);

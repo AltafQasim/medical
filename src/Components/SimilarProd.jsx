@@ -8,7 +8,7 @@ const SimilarProd = ({ id, title, price, rating, image }) => {
         <div className="flex gap-1 sm-mx:justify-between items-center">
           <img
             className="w-20 sm-mx:w-[60px] rounded-md bg-white"
-            src={`../../MyCart/Images/products/${title + image}`}
+            src={`../../Medical/Images/products/${title + image}`}
           />
           <div className="flex w-36 sm-mx:w-[90px] flex-col gap-1">
             <span className="font-semibold ">{title}</span>

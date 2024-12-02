@@ -30,7 +30,7 @@ const OrderItem = ({
         <div className="flex gap-3 items-center">
           <img
             className="w-36 rounded-md bg-gray-100 "
-            src={`../../MyCart/Images/products/${title + images[0]}`}
+            src={`../../Medical/Images/products/${title + images[0]}`}
           />
           <div className="flex flex-col gap-2 ">
             <span className="font-semibold text-xl ">{title}</span>

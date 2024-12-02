@@ -17,7 +17,7 @@ import NotFound from "./Components/NotFound";
 export default function App() {
   return (
     <Provider store={store}>
-      <BrowserRouter basename="/MyCart">
+      <BrowserRouter basename="/medical">
         <Header />
         <div className="mt-16 min-h-[65vh] xl:container mx-auto">
           <Routes>
