@@ -8,7 +8,7 @@ import {
     ArchiveBoxIcon,
     MusicalNoteIcon,
     XMarkIcon,
-    ShoppingCartIcon, UserCircleIcon, MagnifyingGlassIcon, ShoppingBagIcon
+    ShoppingCartIcon, UserCircleIcon, MagnifyingGlassIcon, ShoppingBagIcon,BeakerIcon,TableCellsIcon,LightBulbIcon,HandRaisedIcon
 } from '@heroicons/react/24/outline';
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid';
 import { Link, useLocation } from 'react-router-dom';
@@ -19,12 +19,10 @@ import RegisterForm from './RegisterForm';
 import Logout from './Logout';
 
 const products = [
-    { name: 'Mobile', href: '#', icon: DevicePhoneMobileIcon },
-    { name: 'Books', href: '#', icon: BookOpenIcon },
-    { name: 'Headphone', href: '#', icon: MusicalNoteIcon },
-    { name: 'Furniture', href: '#', icon: ArchiveBoxIcon },
-    { name: 'Handbag', href: '#', icon: ShoppingBagIcon },
-    { name: 'Laptop', href: '#', icon: ComputerDesktopIcon },
+    { name: 'Homeopathy', href: '#', icon: BeakerIcon },
+    { name: 'Ayurvedic', href: '#', icon: BookOpenIcon },
+    { name: 'vitamins', href: '#', icon: TableCellsIcon },
+    { name: 'Sexual Health', href: '#', icon:LightBulbIcon  },
 ]
 
 function classNames(...classes) {
