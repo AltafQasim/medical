@@ -6,8 +6,8 @@ const DebitCard = () => {
             <button className="border w-fit xs-mx:text-sm sm-mx:text-base md-mx:text-lg bg-blue-500 border-blue-500 text-white text-lg hover:bg-blue-700 py-3 px-6 rounded-3xl transition duration-300 ease-in-out " >Explore</button>
             </div>
             <div className="relative">
-        <img className="xs-mx:hidden md-mx:w-[28vw] lg-mx:w-[35vw] absolute top-4 -right-4 -rotate-[20deg]" src="../../medical/Images/debitcard2.png" />
-        <img className="xs-mx:hidden md-mx:w-[28vw] lg-mx:w-[35vw] -rotate-[30deg] z-10" src="../../medical/Images/debitcard.png" />
+        <img className="xs-mx:hidden md-mx:w-[28vw] lg-mx:w-[35vw] absolute top-4 -right-4 -rotate-[20deg]" src="../../Images/debitcard2.png" />
+        <img className="xs-mx:hidden md-mx:w-[28vw] lg-mx:w-[35vw] -rotate-[30deg] z-10" src="../../Images/debitcard.png" />
         </div>
     </div>
 }

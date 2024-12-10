@@ -6,7 +6,7 @@ const DiscountCard = ({price, pic, desc}) => {
             <div className=" lg-mx:text-sm sm-mx:text-xs">Explore Our {desc}</div>
         </div>
         <div className="overflow-hidden cursor-pointer">
-        <img className="hover:scale-[1.2] transform transition-transform duration-[400ms]" src={`../../medical/Images/${pic}.png`} />
+        <img className="hover:scale-[1.2] transform transition-transform duration-[400ms]" src={`../../Images/${pic}.png`} />
         </div>
     </div>
 }

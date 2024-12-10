@@ -74,7 +74,7 @@ const Product = () => {
           <div>
             <img
               className="w-[400px] h-[300px]"
-              src={`../../medical/Images/products/${
+              src={`../../Images/products/${
                 product.title + product.images[imageIndex]
               }`}
               alt="img"
@@ -83,7 +83,7 @@ const Product = () => {
               {product.images.map((item, index) => (
                 <img
                   key={item}
-                  src={`../../medical/Images/products/${product.title + item}`}
+                  src={`../../Images/products/${product.title + item}`}
                   alt="Thumbnail 1"
                   class="size-16 sm:size-20 object-cover rounded-md cursor-pointer opacity-60 hover:opacity-100 transition duration-300"
                   onClick={() => setImageIndex(index)}
